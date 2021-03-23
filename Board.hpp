@@ -11,7 +11,7 @@ namespace ariel {
         public:
             Board() {}
             ~Board () {}
-            void post(int row, int col, Direction direction, std::string&& message);
+            void static post(int row, int col, Direction direction, std::string&& message);
             std::string static read(int row, int col, Direction direction, int length);
             void show();
     };
